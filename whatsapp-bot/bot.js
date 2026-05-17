@@ -136,12 +136,28 @@ if (!browserPath) {
 }
 console.log("Using browser:", browserPath);
 
+// IMPORTANT: do NOT share the user's Chrome profile dir. Puppeteer must
+// use its own --user-data-dir, otherwise Chrome refuses to start a 2nd
+// instance against an already-running profile (the timeout you see).
+const PUPPETEER_PROFILE = path.join(__dirname, ".chrome-profile");
+
 const client = new Client({
   authStrategy: new LocalAuth({ clientId: "brajawali" }),
   puppeteer: {
     headless: true,
     executablePath: browserPath,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      `--user-data-dir=${PUPPETEER_PROFILE}`,
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--disable-extensions",
+      "--disable-features=Translate,site-per-process",
+      "--disable-dev-shm-usage",
+      "--disable-blink-features=AutomationControlled",
+      "--disable-gpu",
+    ],
   },
 });
 

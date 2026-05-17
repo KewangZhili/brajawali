@@ -21,7 +21,27 @@ This project is a complete digital implementation of that reference — a workin
 
 ## Get it on your phone (WhatsApp)
 
-You can run this as a WhatsApp contact you message from your phone. **Free, ~15 minutes setup.**
+Two options:
+
+### A. WhatsApp bot on your real number (recommended for personal use)
+
+A Node bot that links to your WhatsApp via the official Linked Devices QR pairing — same protocol as WhatsApp Web. You type `/braja <text>` in any chat (your own self-chat, a group, a DM) and it auto-replies with the Brajawali rendering.
+
+```bash
+cd ~/.claude/skills/brajawali/whatsapp-bot
+npm install
+npm start            # scan the QR on first run
+```
+
+Then in any WhatsApp chat: `/braja মই তোমাক ভাল পাওঁ` → bot replies instantly.
+
+See **[whatsapp-bot/README.md](whatsapp-bot/README.md)** for details.
+
+Caveat: your computer must be running. No new phone number needed, no fees, uses your real WhatsApp.
+
+### B. Cloud-hosted bot (Twilio + Render, free tier)
+
+A separate WhatsApp number you message; webhook hosts the translator on Render. Always-on (you can mostly close your laptop). 15-minute setup.
 
 ```
 You (📱) ──msg──▶ Twilio sandbox ──webhook──▶ Render.com (Flask)

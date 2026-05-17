@@ -1,0 +1,341 @@
+{
+ "_source": "Sri Sri Narayan Chandra Goswami, Brajawali Bhasar Byakaran aru Abhidhan, Lawyer's Book Stall, Guwahati, 1990. Chapters 2 (alphabet), 8 (parts of speech), 12 (prefixes), 15 (tense), 18 (declension), 19 (conjugation), 20 (cases), 21 (compounds), 23 (tadbhava-tatsama).",
+
+ "pronouns": {
+  "_doc": "From the textbook's tables (pp. 5–9) and the dictionary entries for হামো/তোহো/তেহো. Brajawali has no separate feminine pronouns; তেহো and তোহো cover both genders.",
+  "first_person_singular": {
+   "nominative": ["মঞি", "হামো", "হামি"],
+   "accusative": ["হামাক", "মোহি", "মোহে"],
+   "genitive": ["হামাৰ", "হামাৰি", "হামাৰু", "মোৰ", "তেৰি"],
+   "instrumental": ["হামাৰে"],
+   "ablative": ["হামাহন্তে"],
+   "locative": ["হামাত", "হামাতে"]
+  },
+  "first_person_plural": {
+   "nominative": ["হামো", "হামোসব", "হামি"],
+   "accusative": ["হামাকসব", "হামাৰাসবক"],
+   "genitive": ["হামাৰাসবক", "হামাৰি"]
+  },
+  "second_person": {
+   "_doc": "Single paradigm covers তই / তুমি / আপুনি — i.e. familiar, polite, honorific.",
+   "nominative": ["তঞি", "তোহো", "তোহোসব", "তুমহি", "তুমি"],
+   "accusative": ["তোহাক", "তোহে"],
+   "genitive": ["তোহাৰ", "তোহাৰি", "তোহাকেৰি"],
+   "instrumental": ["তোহাতে", "তোহাৰে"],
+   "ablative": ["তোহাতেসে হন্তে"],
+   "locative": ["তোহাত"]
+  },
+  "third_person": {
+   "_doc": "তেহো is gender-neutral. Distal/proximal also marked by ওহি/সোহি/এই.",
+   "nominative_proximal": ["এহু", "এ", "এই"],
+   "nominative_medial": ["সে", "সো", "সোই", "সোহি"],
+   "nominative_distal": ["ওহি", "ও"],
+   "nominative_neutral": ["তেহো", "তেঞো"],
+   "accusative": ["তাহাক", "তাহেক"],
+   "genitive": ["তাহাৰি", "তাহেৰি", "যাহেৰ"],
+   "ablative": ["সেহন্তে"]
+  },
+  "demonstrative": {
+   "this_proximal": ["এহু", "এই", "এ"],
+   "that_distal": ["ওহি", "সোহি", "সো", "সে"],
+   "such_kind": ["এঁচন", "এছে", "এছন", "তেছন"]
+  },
+  "interrogative": {
+   "who": ["কেহো", "কে"],
+   "what": ["কী", "কি", "কাহা", "কমন"],
+   "where": ["কথি", "কাহা", "কোথি"],
+   "when": ["কব", "কবহু"],
+   "how": ["কৈছন", "কৈচে", "কেনে"],
+   "why": ["কাহে"]
+  },
+  "relative_correlative": {
+   "who_rel": ["যো", "যাহে"],
+   "that_corr": ["তো", "তাহে", "সো"],
+   "when_rel": ["যব", "যবহু"],
+   "then_corr": ["তব", "তবহু"]
+  },
+  "indefinite": {
+   "someone": ["কেহো", "কোই"],
+   "something": ["কিছু", "কিছুৱে"],
+   "anyone": ["কেহো", "কাহো"]
+  }
+ },
+
+ "case_markers": {
+   "_doc": "From chapter 18 (śabdarūp) tables. These suffixes attach to stems. Where multiple are listed, the first is the most common/idiomatic.",
+   "nominative": ["", "এ", "অয়ে", "ই", "ইয়ে", "এৰে", "ও"],
+   "accusative": ["ক", "কু", "কে", "কো", "কহো", "এ", "এৰে", "ৰে", "য়ে", "ত"],
+   "instrumental": ["এ", "এৰ", "ৰে", "ই", "য়ে", "লো", "ৱে", "সে", "হি", "ক"],
+   "dative_to": ["কলাগি", "ক", "কু", "ৰে", "ৰ", "এ", "মহ", "গৈয়া", "এলাই", "এলাগি", "কলাই", "কুলাই", "লাগি", "লাগিয়া"],
+   "ablative_from": ["হন্তে", "ত", "তহন্তে", "এ", "ৰ", "এসেহন্তে"],
+   "genitive": ["ক", "কৰ", "কেৰি", "ৰ", "ৰে", "ৰো", "কু", "কো", "কহো", "কা", "কাৰ", "কি", "এ", "এক", "এৰ", "হি", "হু"],
+   "locative": ["ত", "তে", "তট", "এ", "এয়া", "মহ", "য়", "য়া", "য়ে", "ক", "কহো", "কো", "হি", "ই", "উ", "লো"]
+ },
+
+ "vocative_particles": {
+   "_doc": "Used to address — pp. 9, 173 (Ch. 8-ঘ-2 and Ch. 20-জ).",
+   "general": ["এ", "ঞঁ", "অয়ে", "অৰে", "আগো", "আলো", "আহে", "ওৰে", "ৰে", "হে", "হেৰি", "হেৰা"]
+ },
+
+ "verb_endings": {
+  "_doc": "Conjugation suffixes from Chapter 19 (pp. 67–172). Layout: {tense → {person → {number → [endings]}}}. Where attestations are tabulated for one person/number only, others are empty arrays.",
+
+  "habitual_present": {
+   "_doc": "Nityo-bortomān: 'I do (habitually)'. Endings (3rd person): অ, অই, অত, অতু, অনা, অয়, অয়ে, অন্ত, অহু, আ, আই, আৱত, আৱয়, আৱে, আৱেৰে, ই, ইত, ইনা, এ, এয়া, ওলে.",
+   "first_person": {
+    "singular": ["ও", "ঞু", "ঞ্জু"],
+    "examples": ["কয়ো (I say)", "খাঞু (I eat)", "যাঞু (I go)", "দেঞু (I give)", "বোলো (I say)"]
+   },
+   "second_person": {
+    "singular": ["সি", "ওলেৰে", "এৰে"],
+    "examples": ["আছসি (you are)", "কৰস (you do)", "পিয়ে নাহি (you do not drink)"]
+   },
+   "third_person": {
+    "singular": ["এ", "অয়", "অয়ে", "ই", "অত", "এয়া"],
+    "examples": ["জলে (it burns)", "ছাড়য়ে নাহি (does not let go)", "জাই (goes)", "চাড়য়ে (releases)", "আইসে (comes)"]
+   }
+  },
+
+  "continuous_present": {
+   "_doc": "Swarūp-bortomān: 'I am doing' / 'have done with effect persisting'.",
+   "first_person": {
+    "singular": ["এছি", "ৈছি", "ৈছো", "এছোঁ"],
+    "examples": ["আছি (I am)", "আৱসি (I am coming)", "কহৈছি (I am saying)", "চলৈছো (I am going)"]
+   },
+   "second_person": {
+    "singular": ["এছ", "এছ্‌"],
+    "examples": ["কয়থিক (you are saying)", "দিয়া আছ (you have given)"]
+   },
+   "third_person": {
+    "singular": ["এছে", "ৈয়া আছে"],
+    "examples": ["কৈয়া আছে (he/she has said)", "খেলাইতে থিক (is playing)"]
+   }
+  },
+
+  "past_perfective": {
+   "_doc": "Swarūp-bhūt: simple past with present consequence. Ending pattern -ল- with person markers.",
+   "first_person": {
+    "singular": ["লো", "ৱলো", "ইলো"],
+    "examples": ["আইলো (I came)", "কয়লো (I said)", "খাৱলো (I ate)", "দেখলো (I saw)"]
+   },
+   "second_person": {
+    "singular": ["লি", "লা", "ৱলি", "ৱলা"],
+    "examples": ["আইলা (you came)", "কয়লি (you said)", "খাৱলি (you ate)"]
+   },
+   "third_person": {
+    "singular": ["ল", "ৱল", "ইলে"],
+    "examples": ["আইল (he came)", "কয়ল (he said)", "খাইলে (he ate)", "পেখল (he saw)", "মাৰল (he killed)"]
+   }
+  },
+
+  "past_pluperfect": {
+   "_doc": "Apurṇo-bhūt: 'had done'. Mostly attested for 2nd & 3rd person.",
+   "first_person": {
+    "singular": ["ৈছিলো", "ৈয়াছিলো"],
+    "examples": ["কয়েছিলো (I had said)", "থৈয়াছিলো (I had kept)"]
+   },
+   "second_person": {
+    "singular": ["ছিলা", "ৈছে"],
+    "examples": ["আছিলা (you were)", "কহৈছে (you had said)"]
+   },
+   "third_person": {
+    "singular": ["ৈছিল", "ল"],
+    "examples": ["খেলাইছিল (was playing)", "পেখল (saw)", "মাৰল (killed)"]
+   }
+  },
+
+  "future": {
+   "_doc": "Bhabiṣyat: also covers commands, blessings, requests.",
+   "first_person": {
+    "singular": ["ব", "অব"],
+    "examples": ["আনব (I will bring)", "কৰব (I will do)", "খেদব (I will chase)", "চলব (I will go)"]
+   },
+   "second_person": {
+    "singular": ["বি", "ইবা", "অইবা"],
+    "examples": ["এৰাইবা (you will leave)", "কৰবি (you will do)", "জানবি (you will know)"]
+   },
+   "third_person": {
+    "singular": ["ব"],
+    "examples": ["আনব (he will bring)", "উতাৰব (he will lower)", "জানব (he will know)"]
+   }
+  },
+
+  "imperative": {
+   "_doc": "Anuğyā: command. Distinct māniyārtho (polite) and tucchārtho (familiar) forms.",
+   "second_person_polite": {
+    "examples": ["আনহ (please bring)", "আলিঙ্গহ (embrace)", "উঠ (rise)", "কৰহ (do)", "শূনলো (listen)"]
+   },
+   "second_person_familiar": {
+    "examples": ["কৰহ (do)", "চড়সিয়া (climb)", "চোড়হ (release)", "কহগিয়া (go say)", "বোলগিয়া (go say)"]
+   },
+   "third_person_polite": {
+    "examples": ["কৰতু (let him do)", "জপহু (let him chant)", "ৰহু (let him stay)"]
+   },
+   "third_person_familiar": {
+    "examples": ["দেখোক (let him see)", "পেখোক (let him see)"]
+   }
+  },
+
+  "negative": {
+   "_doc": "Niṣedha-bāchak: built with নাহি / না / ন prefix or compound.",
+   "patterns": ["নাহি ___", "ন___", "___বি নাহি", "___ত নাহি", "ন___ো"],
+   "examples": ["নাহি দেখো (I do not see)", "নাহি কহ (you do not say)", "নাহি খাৱত (you do not eat)", "চাড়বি নাহি (do not let go)", "নাহি আৱব (will not come)", "কৰবিনা (do not do)", "নপাৰিবা (you cannot)", "নযায়ো (does not go)"]
+  },
+
+  "non_finite_participle": {
+   "_doc": "Asamāpikā: 'having done' / 'doing'. Endings: -ই, -ইয়া, -ইয়ে, -ি (cf. ছ্যাপদ patterns).",
+   "examples": ["আকুলি (being agitated)", "জানিয়া (knowing)", "পেখি (seeing)", "হেৰিয়ে (looking)", "আনিকহো (bringing)", "কয়কহো (saying)", "গৈয়া কহো (going saying)"]
+  },
+
+  "infinitive_purposive": {
+   "_doc": "Tum-orthak: 'in order to'. Endings: -তে, -ইতে.",
+   "examples": ["কদাৰ্থতে (to slay)", "পলাইতে (to flee)", "গিলিতে (to swallow)", "কৰিতে লাগিয়ে (begins to do)"]
+  },
+
+  "continuous_simultaneous": {
+   "_doc": "Śatū-bodhok: 'while doing'. Often reduplicated.",
+   "examples": ["আনিতে (while bringing)", "কৰইতে (while doing)", "কান্দিতে কান্দিতে (weeping-weeping)", "খোজগুড়ি যাইতে (while crawling)", "হাসিতে মাতিতে (while laughing-talking)"]
+  },
+
+  "causative": {
+   "_doc": "Pāchanī (preraṇārthak). Endings: -আৱ, -আয়, -আৱল, -আৱত, -আৱে.",
+   "examples": ["অনাৱলো (I made bring)", "দেখাৱলো (I made see)", "পৰাৱল (you made fall)", "কৰায়া থিক (he is having done)", "মৰাৱা থিক (you are causing to die)", "কৰাৱে (he causes)", "কৰাৱত (he is causing)"]
+  }
+ },
+
+ "prefixes_upasarga": {
+  "_doc": "Chapter 12 (p. 13) — Brajawali has 16 of Sanskrit's 20 upasargas. Examples copied verbatim.",
+  "প্ৰ":  {"meaning": "forward, intense", "examples": ["প্ৰকাসি", "প্ৰচাৰি", "প্ৰতাপে", "প্রণামি", "প্ৰবেশল", "প্ৰমাণা", "প্ৰলয়া", "প্ৰহাৰল"]},
+  "অপ":  {"meaning": "away", "examples": ["অপমানে", "অপৰাধে"]},
+  "সম":  {"meaning": "with, complete", "examples": ["সমৰ্গল", "সমৰ্পি", "সমাপল"]},
+  "অনু": {"meaning": "after, following", "examples": ["অনুচৰি", "অনুমানি", "অনুৰূপে", "অনুসৰি"]},
+  "নি":  {"meaning": "down, in", "examples": ["নিগড়ে", "নিৰ্ভয়", "নিতান্ত"]},
+  "অব":  {"meaning": "down, descend", "examples": ["অৱতৰল", "অৱতাৰ", "অবতৰৈছ"]},
+  "নিৰ্‌": {"meaning": "without", "examples": ["নিৰজান", "নিৰমাণ", "নিৰমল"]},
+  "দূৰ্‌": {"meaning": "bad, away", "examples": ["দূৰবলি"]},
+  "বি":   {"meaning": "without, special", "examples": ["বিৰাজে", "বিৰাজয়", "বিহাৰা"]},
+  "সু":   {"meaning": "good, well", "examples": ["সুজান", "সুনেহা", "সুপৰভাত", "সুপৰসন"]},
+  "উৎ":   {"meaning": "up, out", "examples": ["উতপল", "উতপাত", "উতাৰল", "উতাৰি"]},
+  "পৰি":  {"meaning": "around", "examples": ["পৰিছেদ", "পৰিয়াই", "পৰিধানে", "পৰিহৰল"]},
+  "প্ৰতি": {"meaning": "towards, each", "examples": ["প্ৰতিপালি"]},
+  "অভি":  {"meaning": "towards", "examples": ["অভিলাসা", "অভিলাসে"]},
+  "উপ":   {"meaning": "near, sub", "examples": ["উপজল", "উপজলো", "উপজাল", "উপতাপ", "উপমুৱা"]},
+  "আ":    {"meaning": "towards, fully", "examples": ["আচৰয়", "আচৰল", "আচৰলো", "আচাৰি"]}
+ },
+
+ "phonological_rules": {
+  "_doc": "Chapter 2-ঘ (biprokorṣa) and 23 (tadbhava–tatsama). Cluster-breaking with epenthetic vowels: Sanskrit conjuncts are dissolved by inserting অ/উ/ই.",
+  "biprokorso_examples": [
+   ["অগ্নি", "অগনি"], ["অজ্ঞান", "অগিয়ান"], ["অস্হিৰ", "অথিৰ"], ["অদ্ভুত", "অদভুত"],
+   ["অপ্সৰা", "অপেচৰা"], ["অপেচৰা", "অপেচৰা"], ["অবিচ্ছেদ", "অবিছেদ"],
+   ["অমূল্য", "অমোল"], ["অমূল্য", "আমোল"], ["অৰ্থ", "অৰ্থি"], ["অৰ্পিত", "অৰপিত"],
+   ["অল্প", "অলপ"], ["আততায়ী", "আততাই"], ["আত্মা", "আতমা"], ["ইচ্ছা", "ইছা"],
+   ["উৎপল", "উতপল"], ["উদ্দিশ", "উদিশ"], ["উন্মত্ত", "উনমত"], ["উৎসাহ", "উছাহ"],
+   ["উৎসব", "উছৱ"], ["কন্যা", "কইনা"], ["কলুষ", "কলমষ"], ["কৰ্ত্তা", "কৰতা"],
+   ["কৰ্ম্ম", "কৰম"], ["কল্কী", "কলকি"], ["কল্প", "কলপ"], ["কাৰ্য্য", "কাজ"],
+   ["কাপোৰ", "কাপড়"], ["কুব্জী", "কুবুজী"], ["কৃদ্দ্ম", "কৃম"], ["কৃষি", "কিৰিষি"],
+   ["ক্ৰোধ", "কোৰোধ"], ["গৰ্জি", "গৰজি"], ["গৰ্ব", "গৰব"], ["গুপ্ত", "গুপুত"],
+   ["ঘৰ্ম্ম", "ঘৰম"], ["ঘৰ্ষণ", "ঘৰিষণ"], ["ঘৃণা", "ঘিণা"], ["চক্ৰ", "চকৰ"],
+   ["চতুৰ্দ্দশ", "চতুৰদশ"], ["চতুৰ্ভূজ", "চতুৰভুজ"], ["চন্দ্ৰ", "চান্দ"],
+   ["চিত্ত", "চিত"], ["জন্ম", "জনম"], ["তৃপ্তি", "তৃপিতি"], ["স্ম্রী", "তিৰী"],
+   ["তীৰ্থ", "তীৰ্থি"], ["স্তুতি", "তুতি"], ["স্ত্ৰাস", "তৰাস"], ["স্হান", "থান"],
+   ["স্হালি", "থালি"], ["স্হিৰ", "থিৰ"], ["দৰ্প", "দৰপ"], ["দৰ্শন", "দৰশন"],
+   ["দাসী", "দাই"], ["দীপ্তি", "দীপিতি"], ["দূৰ্বল", "দুৰবল"], ["ধৰ্ম্ম", "ধৰম"],
+   ["ধ্যান", "ধিয়ান"], ["ধুতি", "ধতি"], ["নিৰ্জ্জ্ঞান", "নিৰজান"], ["নিৰ্ম্মাণ", "নিৰমাণ"],
+   ["নিৰ্ম্মল", "নিৰমল"], ["পৰ্শি", "পৰশি"], ["প্ৰকাৰে", "পৰকাৰে"], ["প্ৰকাশ", "পৰকাশ"],
+   ["প্ৰচন্ড", "পৰচণ্ড"], ["প্ৰচাৰ", "পৰচাৰ"], ["প্ৰত্যেক", "পৰতেক"], ["প্ৰধান", "পৰধান"],
+   ["প্ৰণাম", "পৰণাম"], ["প্ৰবেশ", "পৰবেশ"], ["প্ৰভাত", "পৰভাত"], ["প্ৰভু", "পহু"],
+   ["প্ৰমাণ", "পৰমাণ"], ["প্ৰসাদ", "পৰসাদ"], ["প্ৰাণ", "পৰাণ"], ["প্ৰীতি", "পীৰিতি"],
+   ["পুত্ৰ", "পুত"], ["পুত্ৰ", "পুতা"], ["পূৰ্ব", "পূৰুব"], ["বৰ্জ্জ", "বৰজি"],
+   ["ব্যাকূল", "বিয়াকূল"], ["ব্যাপক", "বিয়াপক"], ["ব্যাপী", "বিয়াপি"],
+   ["বাৰ্ত্তা", "বাত"], ["বৃদ্ধ", "বুঢ়িয়া"], ["ব্যৱহাৰ", "বেৱহাৰা"], ["ভক্ত", "ভকত"],
+   ["ভক্তা", "ভকতা"], ["ভক্তি", "ভকতি"], ["ভুক্তি", "ভুকূতি"], ["ভ্ৰম", "ভৰম"],
+   ["মগ্ন", "মগন"], ["মন্মথ", "মনমথ"], ["মন্ৰ্ম", "মৰম"], ["মুক্ত", "মুকুত"],
+   ["মুক্তি", "মুকুতি"], ["মুগ্ধ", "মুগুধ"], ["মূৰ্ত্তি", "মূৰুতি"], ["মূৰ্খ", "মূৰুখ"],
+   ["যত্ন", "যতন"], ["যকজ্ত", "যাগ"], ["যুক্তি", "যুগুতি"], ["যৌৱান", "যোৱান"],
+   ["ৰত্ন", "ৰতন"], ["ৰাক্ষস", "ৰাকচ"], ["ৰীতি", "ৰিত"], ["ৰুক্মিণী", "ৰুকমিণী"],
+   ["শক্তি", "শকতি"], ["শৰ্দ", "শবদ"], ["শাস্তি", "শাতি"], ["শীঘ্ৰ", "শীঘিৰ"],
+   ["সৰ্প", "সৰপ"], ["স্মৰণ", "সুমৰন"], ["স্নান", "চিনান"], ["সূৰ্য্য", "সূৰুজ"],
+   ["সূৰ্য্য", "সূৰুয"], ["হৰ্ত্তা", "হৰতা"], ["ক্ষত", "খত"], ["ক্ষীৰ", "খীৰ"]
+  ],
+  "borna_bipordzaya_examples": [
+   ["খেলা", "খেৰা"], ["কেলি", "কেৰি"], ["কোল", "কোৰ"], ["গালি", "গাৰি"],
+   ["চাকৰি", "চাকেৰি"], ["মুখ", "মুহ"], ["চকু", "আখি"], ["হাত", "হাথ"],
+   ["সাথে", "সাতে"], ["ভাল", "ভল্ল"], ["ভোলে", "ভোৰে"], ["মন", "মনু"],
+   ["শোভা", "শোহা"], ["শ্ৰী", "ছিৰি"], ["হৰষে", "হৰথে"], ["ৰক্ত", "ৰাতা"],
+   ["যাও", "যাঞু"], ["খাও", "খাঞু"], ["মই", "মঞি"], ["তই", "তঞি"],
+   ["তেওঁ", "তেঞো"], ["মাই", "মাঞি"], ["নাই", "নাঞি"], ["লওঁ", "লিঞ্তো"]
+  ],
+  "ra_la_interchange": [
+   "নাবোল ↔ নাবোৰ",
+   "ভোলে ↔ ভোৰে",
+   "খেলা ↔ খেৰা",
+   "কেলি ↔ কেৰি",
+   "কোল ↔ কোৰ",
+   "গালি ↔ গাৰি",
+   "পোলে ↔ পোৰে"
+  ]
+ },
+
+ "compound_types": {
+  "_doc": "Chapter 21 (pp. 174–176).",
+  "karmadhāraya": {"definition": "adjective+noun where adj qualifies noun", "examples": ["চান্দমুখী (= চান্দ-তুল্য মুখ)"]},
+  "dwigu":         {"definition": "numeral compound", "examples": ["মাস-চাৰিকৰ (4-month)", "চৌগড়", "চৌদিশে", "চৌপাশে", "চৌভিতি"]},
+  "bahubrīhi":     {"definition": "exocentric: refers to outside entity", "examples": ["পীতপিচোড়া (he-of-yellow-cloth)"]},
+  "dwondwa":       {"definition": "coordinative", "examples": ["অবনিসি (day & night)", "দিবসৰয়নি", "কন্নে কন্নে"]},
+  "abyayībhāwa":   {"definition": "indeclinable+noun", "examples": ["অবিঘিনিয়ে", "প্ৰতি দিনে দিনে", "দিনে দিনে"]},
+  "tatpurusha":    {"definition": "case-determined", "examples": ["folded into nirbibhaktika declension"]}
+ },
+
+ "tense_summary_examples": {
+  "_doc": "Six lines from the textbook (Ch. 15, p. 15) annotated.",
+  "examples": [
+   {"brajawali": "ওহি পাৰিজাত যাহেৰ গৃহে ৰহে, ধনজন বিভৱ তাহেক চাড়য়ে নাহি",
+    "assamese": "এই পাৰিজাত পুষ্প যাৰ ঘৰত থাকে, তেওঁক ধনজন সম্পত্তিয়ে এৰি নিদিয়ে",
+    "source": "পা.হ.",
+    "tense": "habitual_present"},
+   {"brajawali": "যববোল তোহো অন্তেসপুৰে ৰহ, কোন পৰকাৰে ভেট পাৱব",
+    "assamese": "যদি কোৱা যে তুমি অন্তঃপুৰত থাকা, কেনেকৈ লগ পাম",
+    "source": "ৰু.হ.",
+    "tense": "future_conditional"},
+   {"brajawali": "তোৰাসবক প্ৰসাদে স্বামী যদি গুণ দিতে পাৰয়, তব হামাৰ অগতিৰ গতি হয়",
+    "assamese": "আপোনালোকৰ অনুগ্ৰহত যদি স্বামীয়ে গুণ লগাব পাৰে, তেন্তে এই বিপদৰ পৰা মুক্ত হ'ম",
+    "source": "ৰা.বি.",
+    "tense": "habitual_present"},
+   {"brajawali": "স্বামী জানয় যব মিলব মৰণ তব",
+    "assamese": "স্বামীয়ে যদি জানিবলৈ পায়, তেন্তে মৰণ মিলিব",
+    "source": "কে.গো.",
+    "tense": "future"},
+   {"brajawali": "কাহে গৈলে পাইবো লাগ",
+    "assamese": "কেনি গলে লগ পাম",
+    "source": "চো.ধ.",
+    "tense": "future_purposive"},
+   {"brajawali": "নিচিনি কিনিলে পুনু মিলিবে বিঘিনি",
+    "assamese": "চিনি নোলোৱাকৈ কিনিলে পিছত বিপদ হ'ব",
+    "source": "ব.গী.",
+    "tense": "future"}
+  ]
+ },
+
+ "source_codes": {
+  "_doc": "Two-letter abbreviations used in citations throughout dictionary and grammar.",
+  "পা.হ":   "পাৰিজাত হৰণ — Sankaradeva",
+  "ৰু.হ":   "ৰুক্মিণী হৰণ — Sankaradeva",
+  "ৰা.বি":  "ৰাম বিজয় — Sankaradeva",
+  "কে.গো":  "কেলি গোপাল — Sankaradeva",
+  "প.প্ৰ":  "পত্নী প্ৰসাদ — Madhavadeva",
+  "চো.ধ":   "চোৰ ধৰা — Madhavadeva",
+  "পি.গু":  "পিম্পৰা গুচোৱা — Madhavadeva",
+  "ভৃ.লো":  "ভোজন বেহাৰ — Madhavadeva",
+  "ভৃ.হ":   "ভূষণ হৰণ — Madhavadeva",
+  "অ.ভ":    "অৰ্জুন ভঞ্জন — Madhavadeva",
+  "কা.দ":   "কালী দমন — Madhavadeva",
+  "ভো.বে":  "ভোজন বেহাৰ — Madhavadeva",
+  "ব.গী":   "বৰগীত — collected songs of Sankaradeva & Madhavadeva",
+  "ভ":      "ভটিমা — praise-poem corpus",
+  "কী.ঘো":  "কীৰ্তন ঘোষা — Sankaradeva (cross-reference only)",
+  "অ.ড":    "অৰ্জুন ভঞ্জন — Madhavadeva",
+  "কো.খে":  "কোটোৰা খেলা",
+  "ৰা.ব্ম": "ৰাস ঝুমুৰা"
+ }
+}

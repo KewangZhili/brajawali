@@ -19,6 +19,25 @@ This project is a complete digital implementation of that reference — a workin
 
 ---
 
+## Get it on your phone (WhatsApp)
+
+You can run this as a WhatsApp contact you message from your phone. **Free, ~15 minutes setup.**
+
+```
+You (📱) ──msg──▶ Twilio sandbox ──webhook──▶ Render.com (Flask)
+                                                       │
+                                                       ▼
+                                                  translate_v2.py
+                                                       │
+You (📱) ◀──reply───── Twilio ◀────────────────────────┘
+```
+
+See **[server/README.md](server/README.md)** for the step-by-step setup.
+
+Short version: sign up at twilio.com (free WhatsApp sandbox) and render.com (free hosting), import this repo as a Render Blueprint, paste the webhook URL into Twilio, send the join code from your WhatsApp. Done — message any Assamese sentence to the sandbox number and get the Brajawali back.
+
+---
+
 ## Quick start
 
 ### One-time setup (installs the NLP layer)

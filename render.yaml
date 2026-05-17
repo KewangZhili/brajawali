@@ -1,0 +1,17 @@
+# Render.com infrastructure-as-code config.
+# After connecting your GitHub repo to Render, this file auto-provisions
+# the service. Free tier is sufficient for personal use.
+
+services:
+  - type: web
+    name: brajawali-bot
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r server/requirements.txt
+    startCommand: gunicorn --chdir . server.app:app --bind 0.0.0.0:$PORT --workers 1 --timeout 30
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+    healthCheckPath: /
+    autoDeploy: true

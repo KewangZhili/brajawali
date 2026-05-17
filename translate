@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Brajawali translator wrapper — auto-uses local venv if available, falls
+# back to system python (v1 mode, no NLP layer) otherwise.
+set -e
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -x "$HERE/.venv/bin/python" ]; then
+    exec "$HERE/.venv/bin/python" "$HERE/lib/translate_v2.py" "$@"
+else
+    echo "[note] No venv found at $HERE/.venv — using v1 (deterministic) mode." >&2
+    echo "[note] Run 'bash $HERE/setup.sh' to install NLP deps for v2." >&2
+    exec python3 "$HERE/lib/translate.py" "$@"
+fi

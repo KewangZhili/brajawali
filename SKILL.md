@@ -18,19 +18,28 @@ You convert modern Assamese (or Roman-script Assamese) into **Brajawali** — th
 
 ## How to run
 
-The skill ships a Python translator. Run it from the skill directory:
+The skill ships a Python translator. Use the wrapper script (auto-uses the
+NLP venv if present):
 
 ```bash
-cd ~/.claude/skills/brajawali
-python3 lib/translate.py "<assamese or roman text>"
+~/.claude/skills/brajawali/translate "<assamese or roman text>"
 ```
+
+Or call the v2 (NLP-backed) entry directly:
+
+```bash
+~/.claude/skills/brajawali/.venv/bin/python ~/.claude/skills/brajawali/lib/translate_v2.py "<text>"
+```
+
+If the user's machine doesn't have the venv set up, run `bash ~/.claude/skills/brajawali/setup.sh`
+once to install `indic-nlp-library`, `scikit-learn`, and `numpy`.
 
 This prints a JSON object with:
 - `input` — what the user typed
 - `normalised_assamese` — Roman input transliterated to Assamese script
 - `brajawali` — the translation
 - `alignment` — token-by-token mapping with source attribution and morphological analysis
-- `metadata` — counts of direct/morph/biprokorṣa/unknown tokens
+- `metadata` — counts of direct/morph/fuzzy/biprokorṣa/unknown tokens
 
 ## Workflow
 
